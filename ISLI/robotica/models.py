@@ -6,6 +6,7 @@ class Dispositivo(models.Model):
 
     def __str__(self):
         return f"{self.description}"
+        
 class Curso(models.Model):
     grado=models.CharField(max_length=3)
 

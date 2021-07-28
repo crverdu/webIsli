@@ -29,7 +29,7 @@
                     Dropdown
                 </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"> Ver Encuestas </a></li>
+                            <li><a class="dropdown-item" href="{% url 'list_encuesta' %}"> Ver Encuestas </a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </nav>
-    <div class="row-fluid" style="background-color:#eccaca87; padding: 0.1rem;">
+    <div class="row-fluid" style="background-color:#eccaca87; padding: 0.4rem;">
         {% if messages %} {% for message in messages %}
         <div class="alert alert-success" role="alert">
             {{message}}
